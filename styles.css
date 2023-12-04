@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Solway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'Solway', serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.presentation-container{
+    min-width: 320px;
+    background: linear-gradient(0deg, rgba(221,224,251,1) 0%, rgba(160,187,252,1) 100%);
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.3);
+    padding-top: 100px;
+}
+
+.presentation-title-container{
+    min-width: 320px;
+}
+
+.presentation-picture{
+    min-width: 320px;
+    width: 20vw;
+}
+
+.nav{
+    position: fixed;
+    min-width: 320px;
+    width: 100vw;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.bi{
+    color: white;
+    font-size: 22px;
+}
+
+@media (min-width: 1000px){
+    .bi{
+        font-size: 30px;
+        margin: 0 20px;
+    }
+}
+
+.koguryo-a{
+    min-width: 345px;
+    height: 50px;
+    padding: 10px 75px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(167, 209, 227)0%, rgb(0, 9, 56)100%);
+    transition: background-color 1s;
+}
+
+.koguryo-a:hover{
+    background: linear-gradient(90deg, rgb(138, 173, 187)0%, rgb(0, 5, 29)100%);
+}
+
+.carousel-koguryo-container{
+    margin-top: 150px;
+    padding-bottom: 50px;
+    background: linear-gradient(0deg, rgb(230, 230, 230) 0%, rgb(255,255,255) 100%);
+}
+
+#carousel-koguryo{
+    min-width: 345px;
+    width: 65vw;
+}
+
+.carousel-inner{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.galactic-background{
+    background-image: url("./img/galatic_bg.jpg");
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.galactic-title{
+    color: rgb(255, 255, 255);
+}
+
+.galactic-container__picture{
+    min-width: 300px;
+    width: 50vw;
+    padding: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.galactic-container__block{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 576px){
+    .galactic-container__block{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.icon{
+    width: 50%;
+}
+
+.nutritional-plan{
+    display: grid;
+    color: rgb(255, 255, 255);
+    grid-template-columns: repeat(2,1fr);
+    background: rgb(21, 21, 21);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px){
+    .nutritional-plan{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.nutritional-plan__picture{
+    width: 75%;
+}
+
+.nutritional-plan__a{
+    min-width: 300px;
+    width: 35vw;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 22px;
+    box-shadow: 0 10px 0 0 rgb(138, 173, 187);
+    transition: background 0.5s;
+}
+
+.nutritional-plan__a:hover{
+    background: rgb(186, 186, 186);
+}
+
+.footer{
+    margin-top: 100px;
+    padding: 2vh 20vw;
+    background: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.footer__hr{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+.footer-direction__icon{
+    color: rgb(5, 130, 47);
+}
